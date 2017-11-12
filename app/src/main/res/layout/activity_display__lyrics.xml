@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="search.music.avita.music_search.Display_Lyrics">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+        android:padding="2dp"
+        android:layout_marginTop="2.5dp"
+        android:text="Unknown Album"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewAlbumName" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="1.5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_cancel"
+        android:id="@+id/albumCover"
+        android:layout_below="@+id/textViewAlbumName"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"
+        android:padding="2dp"
+        android:textSize="22dp"
+        android:layout_marginBottom="2.5dp"
+        android:layout_gravity="center_horizontal"
+
+        android:text="Unknown Song"
+        android:id="@+id/songName"
+        android:layout_below="@+id/albumCover"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unknown Artist"
+        android:padding="2dp"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"
+
+        android:id="@+id/artistName"
+        android:layout_below="@+id/songName"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="3.5dp"
+        android:layout_below="@+id/artistName"
+        android:padding="2dp"
+        android:text="Lyrics" />
+
+    <TextView
+        android:padding="2dp"
+        android:id="@+id/lyrics"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:text="Unknown Lyrics"
+        android:layout_margin="3.5dp"
+        android:layout_marginTop="3.5dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</ScrollView>
